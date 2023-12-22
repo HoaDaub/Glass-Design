@@ -1,0 +1,97 @@
+#fcbe54
+
+:root{
+    --red:#fcbe54;
+    --pink:#984230;
+    --dark:#a8531f;
+    --magic:#88584f;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+main{
+    height: 100vh;
+    background-image: url(./assets/pexels-marek-piwnicki-7543609.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.glass{
+    height: 80vh;
+    width: 60%;
+    background: linear-gradient(to right bottom,#98413067, #fcbe5467 );
+    border-radius: 3rem;
+    z-index: 3;
+    backdrop-filter:blur(2rem);
+}
+
+.circle1, .circle2{
+    height: 20rem;
+    width: 20rem;
+    background: linear-gradient(to right bottom, #fcbe5479, #98413091 );
+    border-radius: 10rem;
+    position: absolute;
+    z-index: 1;
+}
+
+.circle1{
+    left: 12%;
+    top: 5%;
+}
+
+.circle2{
+    right: 12%;
+    bottom: 5%;
+}
+
+.sidebar{
+    height: 100%;
+    width: 25%;
+    background: linear-gradient(to left top, #88584f85, #fcbe5481);
+    border-radius: 3rem 3rem 0rem;
+}
+
+.mainCon{
+    position: absolute;
+    top: 0;
+    left: 30%;
+    height: 100%;
+    width: 50%;
+    background: linear-gradient(to left top, #88584f85, #fcbe5481);
+}
+
+.sidenav{
+    position: absolute;
+    top: 0;
+    left: 90%;
+    height: 100%;
+    width: 10%;
+    background: linear-gradient(to left top, #88584f85, #fcbe5481);
+    border-radius: 5rem 5rem 5rem;
+}
+
+.icon{
+    position: absolute;
+    top: 1%;
+    left: 7.5%;
+    width: 5rem;
+    height: 5rem;
+    background-image: url(./assets/pexels-maël-balland-3098992.jpg);
+    background-position: center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+
+
+
