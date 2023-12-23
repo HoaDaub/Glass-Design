@@ -14,6 +14,11 @@
     font-family: sans-serif;
 }
 
+a{
+    text-decoration: none;
+    color: black;
+}
+
 main{
     height: 100vh;
     background-image: url(./assets/pexels-marek-piwnicki-7543609.jpg);
@@ -31,7 +36,7 @@ main{
     background: linear-gradient(to right bottom,#98413067, #fcbe5467 );
     border-radius: 3rem;
     z-index: 3;
-    backdrop-filter:blur(2rem);
+    backdrop-filter:blur(1rem);
 }
 
 .circle1, .circle2{
@@ -56,7 +61,7 @@ main{
 .sidebar{
     height: 100%;
     width: 25%;
-    background: linear-gradient(to left top, #88584f85, #fcbe5481);
+    background: linear-gradient(to left top, #88584fab, #fcbe54a1);
     border-radius: 3rem 3rem 0rem;
 }
 
@@ -77,21 +82,73 @@ main{
     width: 10%;
     background: linear-gradient(to left top, #88584f85, #fcbe5481);
     border-radius: 5rem 5rem 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bgSide{
+    z-index: 2;
+    position: absolute;
+    top: 0%;
+    width: 25%;
+    height: 20%;
+    border-radius: 4rem;
+    background: linear-gradient(to left bottom, #88584fbd, #fcbe54af);
+    backdrop-filter:blur(1rem);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .icon{
-    position: absolute;
-    top: 1%;
-    left: 7.5%;
+    z-index: 3;
     width: 5rem;
     height: 5rem;
-    background-image: url(./assets/pexels-maël-balland-3098992.jpg);
+    background-image: url(./assets/Instagram.jpg);
     background-position: center; 
     background-repeat: no-repeat;
     background-size: cover;
     border-radius: 50%;
+    transition: 0.2s;
+}
+.icon:hover{
+    cursor: s-resize;
+    width: 7rem;
+    height: 7rem;
+    transition: 0.2s;
 }
 
+nav{
+    position: absolute;
+    top: 25%;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
+#navLink{
+    margin-top: 5%;
+    width: 100%;
+    padding: 5%;
+    background-color: #fcbe5488;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #88584fa4;
+    transition: 0.2s;
+}#navLink:hover{
+    cursor: pointer;
+    background-color: #fcbe54b0;
+    color: #88584f;
+    border-radius: 1rem;
+    transition: 0.2s;
+}
 
-
+#navLinkI{
+    max-width: 10%;
+    max-height: 10%;
+    margin: 1%;
+}
